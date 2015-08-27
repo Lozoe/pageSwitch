@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>页面切换</title>
+    <script src="js/jquery-2.0.3.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div class="section active" id="section0">
+            <div class="intro">
+                <h1 class="title">switchPage</h1>
+                <p>We must accept finite disappointment, but we must never lose infinite hope</p>
+            </div>
+        </div>
+        <div class="section" id="section1">
+            <div class="intro">
+                <h1 class="title">Fighting</h1>
+                <p>I am a slow walker,but I never walk backwards.</p>
+                <img src="images/example.jpg" />
+            </div>
+        </div>
+        <div class="section" id="section2">
+            <div class="intro">
+                <h1 class="title">To be stronger</h1>
+                <p>You never know how strong you really are until being strong is the only choice you have. </p>
+                <img src="images/example2.jpg" />
+            </div>
+        </div>
+        <div class="section" id="section3">
+            <div class="intro">
+                <h1 class="title">頑張って</h1>
+                <p>あなたに私の手を、一绪に歩いて.</p>
+                <img src="images/example3.jpg" />
+            </div>
+        </div>
+        <div class="section" id="section4">
+            <div class="intro">
+                <h1 class="title">THE END</h1>
+                <p>Everything will be okay in the end. If it's not okay, it's not the end.</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+$(function() {
+    $("#container").switchPage({
+        'loop': true,
+        'keyboard': true,
+        'direction': 'horizontal'
+    });
+});
+</script>
+<script src='js/script.js'></script>
+
+</html>
